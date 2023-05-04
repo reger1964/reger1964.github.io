@@ -1,0 +1,256 @@
+/* -----------------------------------------------------------------------
+타이포그래피 설정
+----------------------------------------------------------------------- */
+
+/* @font-face -> 웹폰트 사용을 위한 지시어(directive) */
+/* html 파일과 같은 폴더에 들어있는 폰트 파일을 사용하는 경우 */
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("fonts/Pretendard-Regular.otf") format("opentype");
+}
+/* 웹 상의 폰트 파일을 사용하는 경우 */
+@font-face {
+    font-family: "Cafe24Ssurround";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
+}
+@font-face {
+    font-family: 'RixYeoljeongdo_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OAGothic-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/OAGothic-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    margin: 0; padding: 0;
+    font-family: "Pretendard-Regular";
+    /* background-color: rgb(163, 247, 219); */
+}
+
+
+
+/* -----------------------------------------------------------------------
+header 영역 - 로고, 메인메뉴
+----------------------------------------------------------------------- */
+
+#상단바 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.788);
+    z-index: 10000;
+}
+#logo {
+    left: 10px;
+    /*position: absolute;
+    top: 40px;
+    left: 40px;
+    font-family: 'RixYeoljeongdo_Regular';
+    font-size: 36px;*/
+}
+#링크바 {
+    display: flex;
+    position: absolute;
+    bottom: 22px;
+    left:  170px;
+    padding-right: 10px;
+    
+}
+#링크바 p {
+    margin: 0 10px;
+}
+/* #navmenu 요소에 포함된 a 태그 스타일 설정 */
+#링크바 a {
+    color: #ffffff;
+}
+#링크바 a:link {
+    text-decoration: none;
+}
+#링크바 a:hover {
+    text-decoration: underline;
+    color: rgb(59, 150, 255);
+}
+
+
+/* -----------------------------------------------------------------------
+본문 영역
+----------------------------------------------------------------------- */
+
+
+#main-container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto; /* 박스(#main-container)를 뷰포트의 가로 방향 가운데로 정렬 */
+    margin-top: 80px;
+    margin-bottom: 60px;
+    /*background-color: bisque;*/
+}
+#title {
+    font-family: "Cafe24Ssurround";
+    font-size: 38px;
+    text-align: center;
+    /*background-color: aquamarine;*/
+}
+#본문 {
+    font-family: "Pretendard-Regular";
+    font-size: 30px;
+    line-height: 160%;
+    text-align: center; 
+    color: #ffffff;
+    /*background-color: blanchedalmond;*/
+}
+#부제목{
+    margin-top: 200px;
+    text-align: center;
+}
+
+
+#배경 {
+    position: absolute;
+    margin-left: 10%;
+    width: 300px;
+    height: 1920px;
+    object-fit: cover;
+    background-color: aliceblue;
+}
+
+
+
+
+#box1 {
+    position: relative;
+    top: 10px;
+    left: -350px;
+    width: 1698px;
+    height: 592px;
+    display: flex;
+    /* flex 아이템을 메인축(가로) 방향으로 가운데 정렬 */
+    flex-wrap: wrap;
+   
+    /*background-color: rgba(127, 255, 212, 0.3);*/
+    
+}
+#box2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    flex-basis: 0px;
+    background-color: rgba(138, 43, 226, 0.3);
+    background-color: rgb(52, 32, 126);
+    /*opacity: 0.3;*/
+}
+#box3 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 1060px;
+    height: 496px;
+    font-family: 'OAGothic-ExtraBold';
+    font-size: 30px;
+    line-break: 100%;
+    padding: 20px;
+    background-color: rgb(52, 32, 126);
+
+}
+
+
+
+#박스1 {
+    position: relative;
+    top: 40px;
+    left: -350px;
+    width: 1698px;
+    height: 592px;
+    /*background-color: rgba(127, 255, 212, 0.3);*/
+    /*background-color: aquamarine;*/
+}
+#박스2 {
+    position: absolute;
+    top: 0;
+    left : 0;
+    width: 0px;
+    height: 0px;
+    flex-basis: 0px;
+    background-color: rgba(138, 43, 226, 0.3);
+    background-color: blueviolet;
+    
+}
+#박스3 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 1060px;
+    height: 496px;
+    font-family: 'OAGothic-ExtraBold';
+    font-size: 30px;
+    padding: 20px;
+    background-color: rgb(52, 32, 126);
+}
+
+#네모1 {
+    position: relative;
+    top: 60px;
+    left: -350px;
+    width: 1698px;
+    height: 592px;
+    /*background-color: rgba(127, 255, 212, 0.3);*/
+   /* background-color: aquamarine;*/
+}
+#네모2 {
+    position: absolute;
+    top: 0;
+    right : 0;
+    width: 0px;
+    height: 0px;
+    flex-basis: 0px;
+    background-color: rgba(138, 43, 226, 0.3);
+    background-color: blueviolet;
+    
+}
+#네모3 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 1060px;
+    height: 496px;
+    
+    font-family: 'OAGothic-ExtraBold';
+    font-size: 30px; 
+    padding: 20px;   
+    background-color: rgb(52, 32, 126);
+}
+
+#본문2{
+    font-family: "Cafe24Ssurround";
+    margin-top: 300px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#배경2{
+    margin-left: 260px;
+    top: 200px;
+    width: 300px;
+    display: flex;
+}
+
+#하단바{
+    position: absolute;
+    font-family: 'OAGothic-ExtraBold';
+    margin-left:-125px ;
+    top: 2250px;
+    width: 1920px;
+    margin-top: 100px;
+    background-color: black;
+    
+}
